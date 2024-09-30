@@ -514,19 +514,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 488365490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 488365492}
-        m_TargetAssemblyTypeName: ButtonDebug, Assembly-CSharp
-        m_MethodName: DebugMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Slide
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &488365490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,9 +562,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 488365487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55ad8180d28b00449de937bf596a5a8, type: 3}
+  m_Script: {fileID: 11500000, guid: ded4a768a52c828429fd1e164edc5629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _movementManager: {fileID: 11400000, guid: 9bd6373fbf846df4f95b8a26c64567ca, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,19 +1306,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1834703147}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1834703149}
-        m_TargetAssemblyTypeName: ButtonDebug, Assembly-CSharp
-        m_MethodName: DebugMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Jump
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1834703147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,9 +1354,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1834703144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55ad8180d28b00449de937bf596a5a8, type: 3}
+  m_Script: {fileID: 11500000, guid: bdf5a83aa2f9c464f81f9becf64985c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _movementManager: {fileID: 11400000, guid: 9bd6373fbf846df4f95b8a26c64567ca, type: 2}
 --- !u!1 &1970210185
 GameObject:
   m_ObjectHideFlags: 0

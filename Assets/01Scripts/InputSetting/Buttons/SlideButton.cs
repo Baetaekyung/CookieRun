@@ -1,13 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class SlideButton : MonoBehaviour
+public class SlideButton : MonoBehaviour,
+    IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] private InputReader _inputReader;
+    [SerializeField] private MovementManagerSO _movementManager;
 
-    public void OnClickBtn()
+    public Action<bool> OnSlide;
+
+    public void OnPointerDown(PointerEventData eventData)
     {
-        _inputReader.OnSlideBtnClicked();
+        Debug.Log("Slide true");
+        _movementManager.SetSlideActive(true);
+        OnSlide?.Invoke(true);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Debug.Log("Slide false");
+        _movementManager.SetSlideActive(false);
+        OnSlide?.Invoke(false);
     }
 }

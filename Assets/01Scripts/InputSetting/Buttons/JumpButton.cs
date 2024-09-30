@@ -1,11 +1,19 @@
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class JumpButton : MonoBehaviour
+public class JumpButton : MonoBehaviour,
+    IPointerDownHandler
 {
-    [SerializeField] private InputReader _inputReader;
+    [SerializeField] private MovementManagerSO _movementManager;
+    public event Action OnJump;
 
-    public void OnClickBtn()
+    public void OnPointerDown(PointerEventData eventData)
     {
-        _inputReader.OnJumpBtnClicked();
+        _movementManager.SetSlideActive(false);
+        _movementManager.AddJumpCnt();
+        Debug.Log("Jump");
+
+        OnJump?.Invoke();
     }
 }
